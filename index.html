@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Каталог фільмів та серіалів, які зараз у тренді. Навчальний проєкт Гуменюка Андрія.">
+  <title>Мій каталог фільмів, Гуменюк Андрій</title>
+</head>
+<body>
+
+  <header>
+    <h1>Каталог фільмів</h1>
+    <p>Веду цей каталог я, Гуменюк Андрій, студент групи ІН-41/2</p>
+    <nav>
+      <ul>
+        <li><a href="#about">Про мене</a></li>
+        <li><a href="#catalog">Каталог</a></li>
+        <li><a href="#favorites">Мої улюблені</a></li>
+        <li><a href="#contacts">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <article id="about">
+      <h2>Про мене та проєкт</h2>
+      <p>
+        Мене звати Андрій. Я навчаюсь у Сумському державному університеті за
+        спеціальністю «Інформатика» і вчусь на програміста. Крім програмування,
+        мене цікавлять комп'ютерні ігри, фільми та серіали, а також довгі
+        прогулянки на вулиці з друзями.
+      </p>
+      <p>
+        Цей каталог фільмів та серіалів я роблю як навчальний проєкт і
+        вдосконалюватиму його протягом семестру.
+      </p>
+    </article>
+
+    <section id="filters">
+      <h2>Фільтри</h2>
+      <form action="#" method="get">
+
+        <fieldset>
+          <legend>Тип</legend>
+          <input type="radio" id="type-all" name="type" value="all" checked>
+          <label for="type-all">Усі</label>
+          <input type="radio" id="type-movie" name="type" value="movie">
+          <label for="type-movie">Фільми</label>
+          <input type="radio" id="type-series" name="type" value="series">
+          <label for="type-series">Серіали</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Жанр</legend>
+          <ul>
+            <li>
+              <input type="checkbox" id="genre-scifi" name="genre" value="scifi">
+              <label for="genre-scifi">Фантастика</label>
+            </li>
+            <li>
+              <input type="checkbox" id="genre-drama" name="genre" value="drama">
+              <label for="genre-drama">Драма</label>
+            </li>
+            <li>
+              <input type="checkbox" id="genre-action" name="genre" value="action">
+              <label for="genre-action">Бойовик</label>
+            </li>
+            <li>
+              <input type="checkbox" id="genre-comedy" name="genre" value="comedy">
+              <label for="genre-comedy">Комедія</label>
+            </li>
+            <li>
+              <input type="checkbox" id="genre-thriller" name="genre" value="thriller">
+              <label for="genre-thriller">Трилер</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button type="submit">Застосувати</button>
+      </form>
+    </section>
+
+    <section id="catalog">
+      <h2>Зараз у тренді</h2>
+      <ul>
+
+        <li>
+          <article data-type="movie" data-genre="scifi">
+            <h3>The Odyssey</h3>
+            <img
+              src="assets/img/the-odyssey-300.jpg"
+              srcset="assets/img/the-odyssey-300.jpg 300w,
+                      assets/img/the-odyssey-600.jpg 600w"
+              sizes="300px"
+              width="300"
+              height="450"
+              alt="Постер фільму The Odyssey"
+              title="The Odyssey"
+              fetchpriority="high"
+>
+            <dl>
+              <dt>Тип</dt>
+              <dd>Фільм</dd>
+              <dt>Жанр</dt>
+              <dd>Фантастика</dd>
+              <dt>Прем'єра</dt>
+              <dd><time datetime="2026-07-17">17 липня 2026</time></dd>
+              <dt>Тривалість</dt>
+              <dd><data value="172">172 хв</data></dd>
+              <dt>Переглянуто</dt>
+              <dd>Так</dd>
+            </dl>
+            <p>Після Троянської війни Одіссей вирушає у небезпечну подорож додому до Ітаки, зустрічаючи міфічних істот і випробування. Епічна екранізація Кристофера Нолана.</p>
+          </article>
+        </li>
+
+        <li>
+          <article data-type="movie" data-genre="scifi">
+            <h3>Project Hail Mary</h3>
+            <img
+              src="assets/img/project-hail-mary-300.jpg"
+              srcset="assets/img/project-hail-mary-300.jpg 300w,
+                      assets/img/project-hail-mary-600.jpg 600w"
+              sizes="300px"
+              width="300"
+              height="450"
+              alt="Постер фільму Project Hail Mary"
+              title="Project Hail Mary"
+              loading="lazy"
+>
+            <dl>
+              <dt>Тип</dt>
+              <dd>Фільм</dd>
+              <dt>Жанр</dt>
+              <dd>Фантастика</dd>
+              <dt>Прем'єра</dt>
+              <dd><time datetime="2026-03-20">20 березня 2026</time></dd>
+              <dt>Тривалість</dt>
+              <dd><data value="156">156 хв</data></dd>
+              <dt>Переглянуто</dt>
+              <dd>Так</dd>
+            </dl>
+            <p>Учитель прокидається самотнім на космічному кораблі й поступово згадує свою місію: врятувати Землю від загадкової загрози.</p>
+          </article>
+        </li>
+
+        <li>
+          <article data-type="movie" data-genre="comedy">
+            <h3>The Super Mario Galaxy Movie</h3>
+            <img
+              src="assets/img/the-super-mario-galaxy-movie-300.jpg"
+              srcset="assets/img/the-super-mario-galaxy-movie-300.jpg 300w,
+                      assets/img/the-super-mario-galaxy-movie-600.jpg 600w"
+              sizes="300px"
+              width="300"
+              height="450"
+              alt="Постер фільму The Super Mario Galaxy Movie"
+              title="The Super Mario Galaxy Movie"
+              loading="lazy"
+>
+            <dl>
+              <dt>Тип</dt>
+              <dd>Фільм</dd>
+              <dt>Жанр</dt>
+              <dd>Комедія</dd>
+              <dt>Прем'єра</dt>
+              <dd><time datetime="2026-04-01">1 квітня 2026</time></dd>
+              <dt>Тривалість</dt>
+              <dd><data value="98">98 хв</data></dd>
+              <dt>Переглянуто</dt>
+              <dd>Ні</dd>
+            </dl>
+            <p>Маріо та його друзі вирушають у нову космічну пригоду, що переносить знайомий світ Nintendo далеко за межі Грибного королівства.</p>
+          </article>
+        </li>
+
+        <li>
+          <article data-type="movie" data-genre="comedy">
+            <h3>Toy Story 5</h3>
+            <img
+              src="assets/img/toy-story-5-300.jpg"
+              srcset="assets/img/toy-story-5-300.jpg 300w,
+                      assets/img/toy-story-5-600.jpg 600w"
+              sizes="300px"
+              width="300"
+              height="450"
+              alt="Постер фільму Toy Story 5"
+              title="Toy Story 5"
+              loading="lazy"
+>
+            <dl>
+              <dt>Тип</dt>
+              <dd>Фільм</dd>
+              <dt>Жанр</dt>
+              <dd>Комедія</dd>
+              <dt>Прем'єра</dt>
+              <dd><time datetime="2026-06-19">19 червня 2026</time></dd>
+              <dt>Тривалість</dt>
+              <dd><data value="102">102 хв</data></dd>
+              <dt>Переглянуто</dt>
+              <dd>Ні</dd>
+            </dl>
+            <p>Вуді, Базз і Джессі стикаються з новим викликом, коли у житті Бонні з'являється сучасний гаджет, який змінює звичний світ іграшок.</p>
+          </article>
+        </li>
+
+        <li>
+          <article data-type="movie" data-genre="thriller">
+            <h3>Disclosure Day</h3>
+            <img
+              src="assets/img/disclosure-day-300.jpg"
+              srcset="assets/img/disclosure-day-300.jpg 300w,
+                      assets/img/disclosure-day-600.jpg 600w"
+              sizes="300px"
+              width="300"
+              height="450"
+              alt="Постер фільму Disclosure Day"
+              title="Disclosure Day"
+              loading="lazy"
+>
+            <dl>
+              <dt>Тип</dt>
+              <dd>Фільм</dd>
+              <dt>Жанр</dt>
+              <dd>Трилер</dd>
+              <dt>Прем'єра</dt>
+              <dd><time datetime="2026-06-12">12 червня 2026</time></dd>
+              <dt>Тривалість</dt>
+              <dd><data value="145">145 хв</data></dd>
+              <dt>Переглянуто</dt>
+              <dd>Ні</dd>
+            </dl>
+            <p>Людство отримує доказ існування позаземного життя, після чого світ змушений зіткнутися з правдою, яка може змінити все. Науково-фантастичний трилер Стівена Спілберга.</p>
+          </article>
+        </li>
+
+        <li>
+          <article data-type="movie" data-genre="action">
+            <h3>Spider-Man: Brand New Day</h3>
+            <img
+              src="assets/img/spider-man-brand-new-day-300.jpg"
+              srcset="assets/img/spider-man-brand-new-day-300.jpg 300w,
+                      assets/img/spider-man-brand-new-day-600.jpg 600w"
+              sizes="300px"
+              width="300"
+              height="450"
+              alt="Постер фільму Spider-Man: Brand New Day"
+              title="Spider-Man: Brand New Day"
+              loading="lazy"
+>
+            <dl>
+              <dt>Тип</dt>
+              <dd>Фільм</dd>
+              <dt>Жанр</dt>
+              <dd>Бойовик</dd>
+              <dt>Прем'єра</dt>
+              <dd><time datetime="2026-07-31">31 липня 2026</time></dd>
+              <dt>Тривалість</dt>
+              <dd><data value="145">145 хв</data></dd>
+              <dt>Переглянуто</dt>
+              <dd>Так</dd>
+            </dl>
+            <p>Пітер Паркер намагається жити самотнім життям супергероя, але поява нової небезпеки змушує його знову вступити в боротьбу.</p>
+          </article>
+        </li>
+
+        <li>
+          <article data-type="series" data-genre="thriller">
+            <h3>His &amp; Hers</h3>
+            <img
+              src="assets/img/his-and-hers-300.jpg"
+              srcset="assets/img/his-and-hers-300.jpg 300w,
+                      assets/img/his-and-hers-600.jpg 600w"
+              sizes="300px"
+              width="300"
+              height="450"
+              alt="Постер серіалу His &amp; Hers"
+              title="His &amp; Hers"
+              loading="lazy"
+>
+            <dl>
+              <dt>Тип</dt>
+              <dd>Серіал</dd>
+              <dt>Жанр</dt>
+              <dd>Трилер</dd>
+              <dt>Прем'єра</dt>
+              <dd><time datetime="2026-01-08">8 січня 2026</time></dd>
+              <dt>Серій</dt>
+              <dd><data value="6">6 серій</data></dd>
+              <dt>Переглянуто</dt>
+              <dd>Ні</dd>
+            </dl>
+            <p>Журналістка повертається до рідного міста, щоб розслідувати вбивство, а головним слідчим у справі виявляється її відчужений чоловік.</p>
+          </article>
+        </li>
+
+        <li>
+          <article data-type="series" data-genre="scifi">
+            <h3>A Knight of the Seven Kingdoms</h3>
+            <img
+              src="assets/img/a-knight-of-the-seven-kingdoms-300.jpg"
+              srcset="assets/img/a-knight-of-the-seven-kingdoms-300.jpg 300w,
+                      assets/img/a-knight-of-the-seven-kingdoms-600.jpg 600w"
+              sizes="300px"
+              width="300"
+              height="450"
+              alt="Постер серіалу A Knight of the Seven Kingdoms"
+              title="A Knight of the Seven Kingdoms"
+              loading="lazy"
+>
+            <dl>
+              <dt>Тип</dt>
+              <dd>Серіал</dd>
+              <dt>Жанр</dt>
+              <dd>Фантастика</dd>
+              <dt>Прем'єра</dt>
+              <dd><time datetime="2026-01-18">18 січня 2026</time></dd>
+              <dt>Серій</dt>
+              <dd><data value="6">6 серій</data></dd>
+              <dt>Переглянуто</dt>
+              <dd>Так</dd>
+            </dl>
+            <p>За століття до подій «Гри престолів» лицар Дунк і його юний зброєносець Ег мандрують Вестеросом та потрапляють у небезпечні пригоди.</p>
+          </article>
+        </li>
+
+        <li>
+          <article data-type="series" data-genre="scifi">
+            <h3>Wonder Man</h3>
+            <img
+              src="assets/img/wonder-man-300.jpg"
+              srcset="assets/img/wonder-man-300.jpg 300w,
+                      assets/img/wonder-man-600.jpg 600w"
+              sizes="300px"
+              width="300"
+              height="450"
+              alt="Постер серіалу Wonder Man"
+              title="Wonder Man"
+              loading="lazy"
+>
+            <dl>
+              <dt>Тип</dt>
+              <dd>Серіал</dd>
+              <dt>Жанр</dt>
+              <dd>Фантастика</dd>
+              <dt>Прем'єра</dt>
+              <dd><time datetime="2026-01-27">27 січня 2026</time></dd>
+              <dt>Серій</dt>
+              <dd><data value="8">8 серій</data></dd>
+              <dt>Переглянуто</dt>
+              <dd>Ні</dd>
+            </dl>
+            <p>Невдачливий актор Саймон Вільямс отримує шанс зіграти супергероя, але поступово виявляє, що сам володіє надзвичайними здібностями.</p>
+          </article>
+        </li>
+
+        <li>
+          <article data-type="series" data-genre="drama">
+            <h3>East of Eden</h3>
+            <img
+              src="assets/img/east-of-eden-300.jpg"
+              srcset="assets/img/east-of-eden-300.jpg 300w,
+                      assets/img/east-of-eden-600.jpg 600w"
+              sizes="300px"
+              width="300"
+              height="450"
+              alt="Постер серіалу East of Eden"
+              title="East of Eden"
+              loading="lazy"
+>
+            <dl>
+              <dt>Тип</dt>
+              <dd>Серіал</dd>
+              <dt>Жанр</dt>
+              <dd>Драма</dd>
+              <dt>Прем'єра</dt>
+              <dd><time datetime="2026-10-01">1 жовтня 2026</time></dd>
+              <dt>Серій</dt>
+              <dd><data value="7">7 серій</data></dd>
+              <dt>Переглянуто</dt>
+              <dd>Ні</dd>
+            </dl>
+            <p>Масштабна історія родини Трасків розгортається на тлі Каліфорнії початку XX століття, а життя двох братів назавжди змінює загадкова Кеті.</p>
+          </article>
+        </li>
+
+      </ul>
+    </section>
+
+    <section id="favorites">
+      <h2>Мої улюблені</h2>
+
+      <figure>
+        <img
+          src="assets/img/shawshank-redemption.jpg"
+          width="300"
+          height="450"
+          alt="Постер фільму Втеча з Шоушенка"
+          title="Втеча з Шоушенка"
+          loading="lazy"
+>
+        <figcaption>Мій улюблений фільм: Втеча з Шоушенка</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="assets/img/breaking-bad.jpg"
+          width="300"
+          height="450"
+          alt="Постер серіалу Пуститись берега"
+          title="Пуститись берега"
+          loading="lazy"
+>
+        <figcaption>Мій улюблений серіал: Пуститись берега</figcaption>
+      </figure>
+    </section>
+
+  </main>
+
+  <aside>
+    <h2>Додатково</h2>
+
+    <h3>Цитата</h3>
+    <blockquote>
+      <p>Get busy living, or get busy dying.</p>
+    </blockquote>
+    <p>З фільму <cite>The Shawshank Redemption</cite></p>
+
+    <h3>Цікавий факт</h3>
+    <p>Фільм «Втеча з Шоушенка» знятий за повістю Стівена Кінга.</p>
+
+    <h3>Мої соцмережі</h3>
+    <ul>
+      <li><a href="#">Telegram</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+  </aside>
+
+  <footer id="contacts">
+    <p>Email: <a href="mailto:gumenukand2004@gmail.com">gumenukand2004@gmail.com</a></p>
+    <p>&copy; 2026 Гуменюк Андрій</p>
+    <p>Постери належать їхнім правовласникам.</p>
+  </footer>
+
+</body>
+</html>
