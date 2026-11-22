@@ -3,15 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Каталог фільмів та серіалів, які зараз у тренді. Навчальний проєкт Гуменюка Андрія.">
-  <title>Мій каталог фільмів, Гуменюк Андрій</title>
+  <meta name="description" content="Каталог фільмів та серіалів, які зараз у тренді: постери, жанри, дати прем'єр і тривалість. Навчальний проєкт Гуменюка Андрія.">
+  <title>Фільми та серіали – Каталог фільмів</title>
+  <link rel="icon" href="favicon.ico">
 </head>
 <body>
-
   <header>
-    <h1>Каталог фільмів</h1>
+    <p>Каталог фільмів</p>
+    <nav aria-label="Основна навігація">
+      <ul>
+        <li><a href="index.html" aria-current="page">Каталог</a></li>
+        <li><a href="about.html">Про проєкт</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Фільми та серіали</h1>
     <p>Веду цей каталог я, Гуменюк Андрій, студент групи ІН-41/2</p>
-    <nav>
+    <nav aria-label="На цій сторінці">
       <ul>
         <li><a href="#about">Про мене</a></li>
         <li><a href="#catalog">Каталог</a></li>
@@ -19,10 +29,6 @@
         <li><a href="#contacts">Контакти</a></li>
       </ul>
     </nav>
-  </header>
-
-  <main>
-
     <article id="about">
       <h2>Про мене та проєкт</h2>
       <p>
@@ -87,7 +93,7 @@
 
         <li>
           <article data-type="movie" data-genre="scifi">
-            <h3>The Odyssey</h3>
+            <h3><a href="details.html">The Odyssey</a></h3>
             <img
               src="images/the-odyssey-300.jpg"
               srcset="images/the-odyssey-300.jpg 300w,
@@ -117,7 +123,7 @@
 
         <li>
           <article data-type="movie" data-genre="scifi">
-            <h3>Project Hail Mary</h3>
+            <h3><a href="details.html">Project Hail Mary</a></h3>
             <img
               src="images/project-hail-mary-300.jpg"
               srcset="images/project-hail-mary-300.jpg 300w,
@@ -147,7 +153,7 @@
 
         <li>
           <article data-type="movie" data-genre="comedy">
-            <h3>The Super Mario Galaxy Movie</h3>
+            <h3><a href="details.html">The Super Mario Galaxy Movie</a></h3>
             <img
               src="images/the-super-mario-galaxy-movie-300.jpg"
               srcset="images/the-super-mario-galaxy-movie-300.jpg 300w,
@@ -177,7 +183,7 @@
 
         <li>
           <article data-type="movie" data-genre="comedy">
-            <h3>Toy Story 5</h3>
+            <h3><a href="details.html">Toy Story 5</a></h3>
             <img
               src="images/toy-story-5-300.jpg"
               srcset="images/toy-story-5-300.jpg 300w,
@@ -207,7 +213,7 @@
 
         <li>
           <article data-type="movie" data-genre="thriller">
-            <h3>Disclosure Day</h3>
+            <h3><a href="details.html">Disclosure Day</a></h3>
             <img
               src="images/disclosure-day-300.jpg"
               srcset="images/disclosure-day-300.jpg 300w,
@@ -237,7 +243,7 @@
 
         <li>
           <article data-type="movie" data-genre="action">
-            <h3>Spider-Man: Brand New Day</h3>
+            <h3><a href="details.html">Spider-Man: Brand New Day</a></h3>
             <img
               src="images/spider-man-brand-new-day-300.jpg"
               srcset="images/spider-man-brand-new-day-300.jpg 300w,
@@ -267,7 +273,7 @@
 
         <li>
           <article data-type="series" data-genre="thriller">
-            <h3>His &amp; Hers</h3>
+            <h3><a href="details.html">His &amp; Hers</a></h3>
             <img
               src="images/his-and-hers-300.jpg"
               srcset="images/his-and-hers-300.jpg 300w,
@@ -297,7 +303,7 @@
 
         <li>
           <article data-type="series" data-genre="scifi">
-            <h3>A Knight of the Seven Kingdoms</h3>
+            <h3><a href="details.html">A Knight of the Seven Kingdoms</a></h3>
             <img
               src="images/a-knight-of-the-seven-kingdoms-300.jpg"
               srcset="images/a-knight-of-the-seven-kingdoms-300.jpg 300w,
@@ -327,7 +333,7 @@
 
         <li>
           <article data-type="series" data-genre="scifi">
-            <h3>Wonder Man</h3>
+            <h3><a href="details.html">Wonder Man</a></h3>
             <img
               src="images/wonder-man-300.jpg"
               srcset="images/wonder-man-300.jpg 300w,
@@ -357,7 +363,7 @@
 
         <li>
           <article data-type="series" data-genre="drama">
-            <h3>East of Eden</h3>
+            <h3><a href="details.html">East of Eden</a></h3>
             <img
               src="images/east-of-eden-300.jpg"
               srcset="images/east-of-eden-300.jpg 300w,
